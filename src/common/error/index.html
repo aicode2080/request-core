@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>温馨提示：您当前的浏览器版本过低，为保证系统正常使用，建议您下载最新版本的谷歌浏览器。</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body class="body-bg">
+        <div class="tip-box" id="tip">
+            <p>您当前的浏览器版本过低，为保证系统正常使用，建议您下载最新版本的谷歌浏览器。</p>
+        </div>
+  </body>
+  <script>
+        function getVersion(stri) {
+            let str = stri || 'chrome';
+            let userAgent = navigator.userAgent;
+    
+            str = str.toLowerCase();
+            let arr = userAgent.split(' ');
+            let chromeVersion = ''
+            for (let i = 0; i < arr.length; i++) {
+                let reg = new RegExp(str, 'i');
+                if (reg.test(arr[i]));
+                chromeVersion = arr[i]
+            }
+            chromeVersion = parseInt(chromeVersion.replace(/[^0-9.]/ig, ''));
+            return chromeVersion;
+        }
+    
+        function checkBrowser() {
+            let userAgent = navigator.userAgent.toLowerCase();
+            let rusult = true
+            if (userAgent.indexOf('chrome') > -1 && getVersion('chrome') >= 60) {// chromre浏览器版本号低于60
+                result = false
+            } else if (userAgent.indexOf('firefox') > -1 && getVersion('Firefox') >= 35) {// 火狐浏览器版本号低于35
+                result = false
+            } else if (userAgent.indexOf('safari') > -1 && getVersion('version') >= 12) {// safari浏览器低于12
+                result = false
+            } else if (userAgent.indexOf('trident') > -1 && userAgent.idnexOf('rv:11.0') > -1) {// IE浏览器低于11
+                result = false
+            }
+            if (result) {
+                document.getElementById('tip').style.display = 'block';
+
+                setTimeout( ()=> {
+                    window.location.href = '/jreap';
+                }, 5000)
+            } else {
+                window.location.href = '/jreap';
+            }
+        }
+    
+        checkBrowser();
+    
+    </script>
+</html>

@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "target": "es5",
+        "lib": ["es6", "dom"],
+        "module": "commonjs",
+        "strict": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "noImplicitThis": false,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "allowJs": true
+    },
+    "include": [
+        "./src",
+    ],
+    "exclude": ["dist", "node_modules", "test/typescript"]
+}

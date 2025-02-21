@@ -1,0 +1,72 @@
+{
+  "_from": "jreap-core@^2.1.27",
+  "_id": "jreap-core@2.1.27",
+  "_inBundle": false,
+  "_integrity": "sha512-EL5Y9z35muPFswvvQbe57JESwAv8DOCW/FndJtJHZcGoCPX/0Jvr+sbgzRW+SdA7GgMj1MWbPH2x++HM6KL88A==",
+  "_location": "/jreap-core",
+  "_phantomChildren": {
+    "nanoid": "3.3.7",
+    "source-map-js": "1.0.2"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "jreap-core@^2.1.27",
+    "name": "jreap-core",
+    "escapedName": "jreap-core",
+    "rawSpec": "^2.1.27",
+    "saveSpec": null,
+    "fetchSpec": "^2.1.27"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://10.50.144.17:8888/jreap-core/-/jreap-core-2.1.27.tgz",
+  "_shasum": "b1ef51b2806030dd268c49f4ed96cf4f74829faf",
+  "_spec": "jreap-core@^2.1.27",
+  "_where": "liaoning-pg-front",
+  "author": {
+    "name": "tj"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "md5": "^2.3.0",
+    "postcss": "^8.4.4",
+    "rsa-js-java": "^1.0.4",
+    "rxjs": "^6.5.4"
+  },
+  "deprecated": false,
+  "description": "此库包含共用方法、jreap平台的共用样式和所有接口的请求和拦截处理。",
+  "devDependencies": {
+    "antd": "^3.26.20",
+    "awesome-typescript-loader": "^5.2.1",
+    "axios": "^0.19.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "font-awesome-loader": "^1.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "md5": "^2.3.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "qs": "^6.9.0",
+    "rsa-js-java": "^1.0.4",
+    "rxjs": "^6.5.4",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.0.0",
+    "typescript": "^3.6.4",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "license": "ISC",
+  "main": "lib/index.js",
+  "name": "jreap-core",
+  "public": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.pro.json  &&  webpack --config=build/webpack.prod.js  ",
+    "start": "webpack-dev-server --config=build/webpack.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.1.27"
+}

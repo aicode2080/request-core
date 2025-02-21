@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["es6", "dom"],
+        "module": "commonjs",
+        "strict": false,
+        "rootDir": "src",
+        "outDir": "lib",
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "noImplicitThis": false,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "declaration":true
+    },
+    "include": [
+        "./src",
+    ],
+    "exclude": ["dist", "node_modules", "test/typescript"]
+}
